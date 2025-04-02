@@ -1,0 +1,30 @@
+﻿@model ProjetoCinema.Models.Diretor
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Diretor</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nomeDiretor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nomeDiretor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.paisDiretor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.paisDiretor)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.idDiretor">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
